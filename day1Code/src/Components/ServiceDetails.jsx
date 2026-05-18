@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const ServiceDetails = () => {
   const navigate = useNavigate();
@@ -14,6 +14,7 @@ const ServiceDetails = () => {
       >
         Go Back
       </button>
+      
     </div>
   );
 };

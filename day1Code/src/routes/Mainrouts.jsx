@@ -12,9 +12,10 @@ const Mainrouts = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Product" element={<Product />} />
-        <Route path="/Product/details/:name" element={<ProductDetails/>} />
-        <Route path="/Service" element={<Service />} />
-        <Route path="/Service/Details" element={<ServiceDetails />} />
+        <Route path="/Product/details/:name" element={<ProductDetails />} />
+        <Route path="/Service" element={<Service />}>
+          <Route path="/Service/Details" element={<ServiceDetails />} />
+        </Route>
         <Route path="/About" element={<About />} />
       </Routes>
     </div>
